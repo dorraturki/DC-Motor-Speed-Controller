@@ -82,7 +82,7 @@ Each major block was simulated to verify functionality before hardware implement
 ## 📸 Result
 
 A fully functional PCB-based motor controller, tested and validated.
-
+<img src=".FinalResult.jpg" alt="Final Build" width="400"/>
 ![Final Build](/FinalResult.jpg) <!-- Replace with your actual photo path -->
 
 ---
