@@ -2,15 +2,6 @@
 
 This repository contains the documentation for a **DC Motor Speed Controller**. The aim was to design, simulate, and build an electronic board capable of controlling the **speed and direction** of a DC motor.
 
-## 📦 Contents
-
-- ⚙️ Circuit design and simulations (PSpice)
-- 🛠️ PCB design (EAGLE files)
-- 🧪 Testing procedures
-- 📸 Photo of the final implementation
-
----
-
 ## 🚀 Project Overview
 
 A speed controller is an essential component in numerous applications, allowing for precise and efficient motor control. This project covers:
@@ -64,13 +55,17 @@ A speed controller is an essential component in numerous applications, allowing 
 
 ## 🖥️ Simulations
 
-Simulation results (available in `/simulations`) verify the circuit design for:
+Each major block was simulated to verify functionality before hardware implementation.
 
-- PWM signal generation
-- Output waveforms at test points
-- Stability of power supply
-- Behavior of speed adjustment circuit
-- Logic control signals
+| Block                 | Circuit Diagram                      | Signal Output                   |
+|-----------------------|--------------------------------------|---------------------------------|
+| Power Supply          | `Power Supply - Circuit.png`         | `Power Supply - Result.png`     |
+| Square Wave Oscillator| `Square Wave - Circuit.png`          | `Square Wave - Result.png`      |
+| Sawtooth Generator    | `Sawtooth Signal - Circuit.png`      | `Sawtooth Signal - Result.png`  |
+| Comparator            | `Comparator - Circuit.png`           | `Comparator - Result.png`       |
+| PWM Chopper           | `Chopper - Circuit.png`              | `Chopper - Result.png`          |
+
+> All simulation visuals are found in the `simulations/` folder and demonstrate expected behavior at each test point (LSPs).
 
 ---
 
@@ -88,9 +83,7 @@ Simulation results (available in `/simulations`) verify the circuit design for:
 
 A fully functional PCB-based motor controller, tested and validated.
 
-![Final Build](./photos/final_result.jpg) <!-- Replace with your actual photo path -->
+![Final Build](./final_result.jpg) <!-- Replace with your actual photo path -->
 
 ---
-
-## 📁 File Structure
 
